@@ -10,10 +10,11 @@ class TaxiData:
     def to_json(self):
         return json.loads(self.df.to_json(orient = "records"))
     
+    
 
 
 
-print(TAXI_CSV_PATH)
+#print(TAXI_CSV_PATH)
 
 # print(DATA_PATH)
 
