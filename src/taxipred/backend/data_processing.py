@@ -1,4 +1,5 @@
-from taxipred.utils.constants import TAXI_CSV_PATH, DATA_PATH
+from taxipred.utils.constants import TAXI_CSV_PATH, DATA_PATH, MODEL_PATH, JOBLIB_PATH
+
 import pandas as pd
 import json
 
@@ -17,5 +18,9 @@ class TaxiData:
 #print(TAXI_CSV_PATH)
 
 # print(DATA_PATH)
+
+#print(MODEL_PATH)
+
+#print(JOBLIB_PATH)
 
 
