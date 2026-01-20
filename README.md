@@ -130,7 +130,7 @@ Running the Backend API:
 
 4.Start the backend API by navigating to the backend folder and start the API:
 
-uv run uvicorn api.main:app --reload
+uv run uvicorn api:app --reload
 
 The API will run at:
 
@@ -175,9 +175,13 @@ Example:
 
 ## Screenshots
 
-![Home](images/streamlit_home.png)
-![Input Form](images/streamlit_form.png)
-![Prediction Result](images/streamlit_result.png)
+### Home Page
+![Home](images/home.png)
+
+![Input Form](images/backend_docs_predict.png)
+
+### Prediction Result
+![Result](images/result.png)
 
 
 /*********************************/
