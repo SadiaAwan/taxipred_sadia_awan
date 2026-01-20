@@ -1,40 +1,81 @@
-from fastapi import FastAPI
-import numpy as np
 import joblib
+import pandas as pd
+from fastapi import FastAPI, HTTPException, Query
 from pydantic import BaseModel, Field
+from typing import Literal
 
-#from taxipred.data_processing import TaxiData
-#from taxipred.utils.constants import JOBLIB_PATH
-
-from data_processing import TaxiData
-#from constants import JOBLIB_PATH
+from taxipred.backend.data_processing import TaxiData
 from taxipred.utils.constants import JOBLIB_PATH
 
-# Skapa Em FastAPI
 
-app = FastAPI()
+TimeOfDay = Literal["Morning", "Afternoon", "Evening", "Night"]
 
+# print("JOBLIB EXISTS:", JOBLIB_PATH.exists())
+# print("JOBLIB PATH:", JOBLIB_PATH)
+
+
+app = FastAPI(title="Taxi Prediction API")
+
+data = TaxiData()
 model = joblib.load(JOBLIB_PATH)
 
-# Pydantic-modell i SAMMA fil
 
-class TaxiPredictionInput(BaseModel):
-    passenger_count: int = Field(..., ge=1, le=6)
-    trip_distance: float = Field(..., gt=0)
+class PredictIn(BaseModel):
+    Trip_Distance_km: float = Field(..., ge=0)
+    Trip_Duration_Minutes: float = Field(..., ge=0)
+    Time_of_Day: TimeOfDay
+    Passenger_Count: float = Field(..., ge=0)
 
-
-# Endpoint för att läsa data
-
-@app.get("/data")
-def get_data():
-    data = TaxiData()
-    return data.to_json()
+@app.get("/")
+def root():
+    return {"message": "Taxi Prediction API is running"}
 
 
-# Prediktions-endpoint
+@app.get("/health")
+def health():
+    return {
+        "status": "ok",
+        "rows": len(data.df),
+        "model_path": str(JOBLIB_PATH),
+    }
+
+
+@app.get("/data/sample")
+def sample(n: int = Query(10, ge=1, le=200)):
+    return data.sample(n)
+
+
+@app.get("/data/rows")
+def rows(
+    offset: int = 0,
+    limit: int = 50,
+    columns: str | None = None,
+    time_of_day: TimeOfDay | None = None,
+):
+    cols = columns.split(",") if columns else None
+    return data.rows(offset, limit, cols, time_of_day)
+
+
+@app.get("/data/stats")
+def stats():
+    return data.stats()
+
 
 @app.post("/predict")
-def predict(input: TaxiPredictionInput):
-    X = np.array([[input.passenger_count, input.trip_distance]])
-    prediction = model.predict(X)
-    return {"predicted_price": float(prediction[0])}
+def predict(x: PredictIn):
+    try:
+        X = data.make_X(
+            x.Trip_Distance_km,
+            x.Trip_Duration_Minutes,
+            x.Time_of_Day,
+            x.Passenger_Count,
+        )
+        return {"prediction": float(model.predict(X)[0])}
+    except Exception as e:
+        raise HTTPException(500, str(e))
+
+
+@app.post("/predict/batch")
+def predicts_batch(items: list[PredictIn]):
+    X = pd.DataFrame([i.model_dump() for i in items])
+    return {"precitions": [float(v) for v in model.predict(X)]}
