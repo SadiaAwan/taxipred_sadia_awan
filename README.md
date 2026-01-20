@@ -178,6 +178,7 @@ Example:
 ### Home Page
 ![Home](images/home.png)
 
+### Backend API Documentation
 ![Input Form](images/backend_docs_predict.png)
 
 ### Prediction Result
