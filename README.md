@@ -40,6 +40,9 @@ Example:
 ![Backend_docs](images/backend_docs.png)
 
 
+## Fullstack ML
+![Fullstack ML](images/Fullstack ML.pptx)
+
 
 Taxi Prediction App:
 
