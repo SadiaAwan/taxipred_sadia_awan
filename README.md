@@ -1,8 +1,44 @@
 # taxipred_sadia_awan
 School lab for ML
 
-Worked with Kevin Bruno my study partner!
 
+
+Streamlit Application Screenshots:
+
+THIS IS WHAT YOU HAVE BEEN LOOKING FOR ALL YOUR LIFE REGARDING TAXI TRIP PRICE! CHECK IT OUT!
+
+Below are screenshots from the Streamlit application showing the user interface and prediction flow.
+
+
+Screenshots Description:
+
+Main page of the Streamlit application
+
+Input form where the user enters trip details
+
+Displayed predicted taxi price
+
+/*************************/
+
+
+How Screenshots Are Added:
+
+Screenshots are stored in an images folder in the repository and embedded into this README file.
+
+Example:
+
+## Screenshots
+
+### Prediction Result
+![Result](images/result.png)
+
+
+### Backend API Documentation
+![Input Form](images/backend_docs_predict.png)
+
+
+
+/*********************************/
 
 
 
@@ -148,44 +184,6 @@ http://localhost:8501
 
 
 
-Streamlit Application Screenshots:
-
-Below are screenshots from the Streamlit application showing the user interface and prediction flow.
-
-
-
-
-
-Screenshots Description:
-
-Main page of the Streamlit application
-
-Input form where the user enters trip details
-
-Displayed predicted taxi price
-
-/*************************/
-
-
-How Screenshots Are Added:
-
-Screenshots are stored in an images folder in the repository and embedded into this README file.
-
-Example:
-
-## Screenshots
-
-### Home Page
-![Home](images/home.png)
-
-### Backend API Documentation
-![Input Form](images/backend_docs_predict.png)
-
-### Prediction Result
-![Result](images/result.png)
-
-
-/*********************************/
 
 
 API Endpoints:
@@ -219,3 +217,8 @@ The final trained model is saved using Joblib and loaded by the backend API.
 Conclusion:
 
 This project demonstrates how to combine machine learning, backend development, and frontend visualization into a complete application. The README provides clear documentation and screenshots to make the project easy to understand and run.
+
+
+
+
+Worked with Kevin Bruno my study partner!
