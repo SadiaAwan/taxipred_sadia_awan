@@ -4,7 +4,7 @@
 ### Prediction Result
 ![Result](images/result.png)
 
-### Backend API Doc for prediction
+### Backend API Docs for prediction
 ![Input Form](images/backend_docs_predict.png)
 
 ## Backend API docs
