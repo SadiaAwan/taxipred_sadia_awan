@@ -1,17 +1,5 @@
 # taxipred_sadia_awan
 School lab for ML
-
-
-
-Streamlit Application Screenshots:
-
-THIS IS WHAT YOU HAVE BEEN LOOKING FOR ALL YOUR LIFE REGARDING TAXI TRIP PRICE! 
-
-CHECK IT OUT!
-
-
-Example:
-
 ## Screenshots
 
 ### Prediction Result
@@ -29,7 +17,17 @@ Example:
 ## Fullstack ML
 ![Fullstack_ML](images/Fullstack_ML.png)
 
-Below are screenshots from the Streamlit application showing the user interface and prediction flow.
+
+Streamlit Application Screenshots:
+
+THIS IS WHAT YOU HAVE BEEN LOOKING FOR ALL YOUR LIFE REGARDING TAXI TRIP PRICE! 
+
+CHECK IT OUT!
+
+
+Example:
+
+Above are screenshots from the Streamlit application showing the user interface and prediction flow.
 
 
 Screenshots Description:
