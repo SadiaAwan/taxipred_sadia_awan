@@ -18,7 +18,6 @@ Input form where the user enters trip details
 
 Displayed predicted taxi price
 
-/*************************/
 
 
 How Screenshots Are Added:
@@ -37,8 +36,8 @@ Example:
 ![Input Form](images/backend_docs_predict.png)
 
 
-
-/*********************************/
+## Backend API docs
+![Backend_docs](images/backend_docs.png)
 
 
 
