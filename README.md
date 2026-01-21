@@ -16,7 +16,7 @@
 Streamlit Application Screenshots:
 
 Above are screenshots from the Streamlit application showing the user interface and prediction flow. Also displayed predicted taxi price
-with input form where the user enters trip details. You also see backend/docs/prediction screeshots with same prediction. Anoter one with all get- and post- endpoints. Last but not least a picture of fullstack ML.
+with input form where the user enters trip details. You also see backend/docs/prediction screeshots with same prediction. Another one with all get- and post- endpoints. Last but not least a picture of fullstack ML.
 
 Taxi Prediction App:
 
@@ -176,4 +176,4 @@ Conclusion:
 This project demonstrates how to combine machine learning, backend development, and frontend visualization into a complete application. The README provides clear documentation and screenshots to make the project easy to understand and run.
 
 
-School lab for ML worked with Kevin Bruno my study partner!
+School lab on ML which I worked with Kevin Bruno my study partner!
