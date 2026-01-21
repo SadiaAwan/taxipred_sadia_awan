@@ -5,24 +5,10 @@ School lab for ML
 
 Streamlit Application Screenshots:
 
-THIS IS WHAT YOU HAVE BEEN LOOKING FOR ALL YOUR LIFE REGARDING TAXI TRIP PRICE! CHECK IT OUT!
+THIS IS WHAT YOU HAVE BEEN LOOKING FOR ALL YOUR LIFE REGARDING TAXI TRIP PRICE! 
 
-Below are screenshots from the Streamlit application showing the user interface and prediction flow.
+CHECK IT OUT!
 
-
-Screenshots Description:
-
-Main page of the Streamlit application
-
-Input form where the user enters trip details
-
-Displayed predicted taxi price
-
-
-
-How Screenshots Are Added:
-
-Screenshots are stored in an images folder in the repository and embedded into this README file.
 
 Example:
 
@@ -42,6 +28,25 @@ Example:
 
 ## Fullstack ML
 ![Fullstack_ML](images/Fullstack_ML.png)
+
+Below are screenshots from the Streamlit application showing the user interface and prediction flow.
+
+
+Screenshots Description:
+
+Main page of the Streamlit application
+
+Input form where the user enters trip details
+
+Displayed predicted taxi price
+
+
+
+How Screenshots Are Added:
+
+Screenshots are stored in an images folder in the repository and embedded into this README file.
+
+
 
 
 Taxi Prediction App:
