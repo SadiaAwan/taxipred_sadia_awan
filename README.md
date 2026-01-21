@@ -52,7 +52,7 @@ Project Structure:
 
 
 
-
+```
 TAXIPRED_SADIA_AWAN
 │
 ├── .venv/
@@ -89,7 +89,7 @@ TAXIPRED_SADIA_AWAN
 ├── pyproject.toml
 ├── uv.lock
 └── README.md
-
+```
 
 
 Structure Explanation:
