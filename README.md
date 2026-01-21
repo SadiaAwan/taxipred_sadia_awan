@@ -41,7 +41,7 @@ Example:
 
 
 ## Fullstack ML
-![Fullstack ML](images/Fullstack ML.pptx)
+![Fullstack_ML](images/Fullstack_ML.png)
 
 
 Taxi Prediction App:
