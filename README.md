@@ -13,10 +13,11 @@
 ## Fullstack ML
 ![Fullstack_ML](images/Fullstack_ML.png)
 
+
+
 Streamlit Application Screenshots:
 
-Above are screenshots from the Streamlit application showing the user interface and prediction flow. Also displayed predicted taxi price
-with input form where the user enters trip details. You also see backend/docs/prediction screeshots with same prediction. Another one with all get- and post- endpoints. Last but not least a picture of fullstack ML.
+Above are screenshots from the Streamlit application showing the user interface and prediction flow. You can also see displayed predicted taxi price with input form where the user enters trip details. You also see backend/docs/prediction screeshots with same prediction. Another screenshot displaying docs with all get- and post- endpoints. Last but not least a picture of fullstack ML.
 
 Taxi Prediction App:
 
